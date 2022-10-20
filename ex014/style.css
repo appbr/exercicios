@@ -25,14 +25,14 @@ header{
 }
 
 h1{
-    margin-top: 4vh;
+    margin-top: 15vh;
 }
 
 section{
     width: 85vw;
-    /* height: 5wv; */
+    /* height: 100wh; */
     position: absolute;
-    top: 45vh;
+    bottom: 50;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -57,5 +57,13 @@ footer{
 div{
     
     padding: 2vh;
+    display: flex;
+    justify-content: center;
 
 }
+
+#image{
+    width: 50%;
+    max-width: 300px;
+}
+
