@@ -28,6 +28,7 @@ function carregar(){
         document.body.style.background = '#515154'
     }
     var initTimer = setInterval(carregar, 1000);
+    // uhullll
     
 }
 
