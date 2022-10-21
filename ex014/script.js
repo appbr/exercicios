@@ -4,7 +4,16 @@ function carregar(){
     var image = document.querySelector('#image');
     var data = new Date()
     var hora =  data.getHours()
-    msg.innerHTML = `Agora são ${hora} horas.`;
+    var min = data.getMinutes()
+    var sec = data.getSeconds()
+    if(hora < 10) hora = "0" + hora;
+    if(min < 10) min = "0" + min;
+    if(sec < 10) sec = "0" + sec;
+    var tempo = hora + ":" + min + ":" + sec;
+    msg.innerHTML = tempo;
+    
+    
+    
 
     if(hora >= 0 && hora < 12){
         //Bom dia
@@ -18,5 +27,9 @@ function carregar(){
         image.src = 'images/noite.png'
         document.body.style.background = '#515154'
     }
+    var initTimer = setInterval(carregar, 1000);
+    
 }
+
+    
 
